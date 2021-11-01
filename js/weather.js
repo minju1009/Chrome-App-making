@@ -1,7 +1,11 @@
+const API_KEY = "f6ded5a18359f5659093432ee665362a"; 
+
 function onGeoOk(position){
     const lat = position.coords.latitude;
-    const lng = position.coords.longitude;
-    console.log("You live in",lat,lng);
+    const lon = position.coords.longitude;
+    console.log("You live in",lat,lon);
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+    fetch(url);
 }
 
 function onGeoError() {
@@ -9,4 +13,8 @@ function onGeoError() {
 }
 
 
-navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);  
+
+
+
+
