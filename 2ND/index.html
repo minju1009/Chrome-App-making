@@ -11,22 +11,37 @@
 <body>
   
     <!-- top navigator -->
-    <div id="navigator">
-        <div class="navigtor__left">
-            <span class="navigator__left__link">Link</span>
-            <div class="navigator__lift__search">
-                <i class="fas fa-search"></i>
-                <input type="text">
+    <div class="top-row">
+        <div class="region top-left">
+            <div id="quicklinks" class="app-container quicklinks links no-pinned" style>
+                <span class="app-dash toggle Links-toggle">Links</span>
+            <div id="dashlinks" class="dashlinks"></div>
+            <div id="search" class="app-container search">
+                <div class="app-dash">
+                    <form class="search-form">
+                        <span class="search-underline"></span>
+                        <i class="fas fa-search icon-search"></i>
+                        <div class="more more source more-dash"></div>
+                        <input id="search-input" search-url="https://www.google.com/search?q=" type="text" autocomplete="off">
+                    </form>
+
+
+                </div>
+            </div>
             </div>
         </div>
-        <div class="navigator__right">
+
+        <div class="region top-center"></div>
+        <div class="region top-right">
             <div id="weather">
                 <span></span>
                 <span></span>
             </div>
-
         </div>
     </div>
+
+
+
 
     <!-- clock -->
     </div>
